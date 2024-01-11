@@ -22,16 +22,16 @@ module SmsServices
     private
       # replace with an upgrade (non trail) Twilio account (account_id, auth_token, and from_phone)
       def account_sid
-        "ACc55bc6ab11fe3f8d38cb402fe803a0bc"
+        Rails.application.credentials.twilio[:account_sid]
       end
-
+  
       def auth_token
-        "eb60987de53f9753c5fd916d8afad3a0"
+        Rails.application.credentials.twilio[:auth_token]
       end
-
+  
       def from_phone
-        "+18337024593"
-      end
+        Rails.application.credentials.twilio[:from_phone]
+      end      
   end
 
 end

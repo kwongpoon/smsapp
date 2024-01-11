@@ -20,6 +20,7 @@ module SmsServices
     end
 
     private
+      # replace with an upgrade (non trail) Twilio account (account_id, auth_token, and from_phone)
       def account_sid
         "ACc55bc6ab11fe3f8d38cb402fe803a0bc"
       end
